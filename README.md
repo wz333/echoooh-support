@@ -5,7 +5,7 @@ Pages at <https://wz333.app/echoooh-support/>.
 
 - `index.html` — Support: contact, common questions, publisher takedown.
 - `privacy.html` — Privacy Policy.
-- `assets/` — app icon, brush stroke, and three-monkeys mark, taken from
+- `assets/` — app icon and three-monkeys mark, taken from
   the app's own asset catalog.
 
 No build step; the two pages are hand-written HTML with inline CSS.

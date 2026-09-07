@@ -53,26 +53,6 @@
     overflow-x: clip;
   }
 
-  /* The mascot's own brush stroke, left as a watermark in the empty
-     space a short page leaves behind — bleeding off a screen edge
-     rather than sitting inside the margin. Support is reached through
-     More, which is the one place the system mirrors the stroke to the
-     trailing edge. Full-strength brand red, never a washed tint. */
-  .stroke-space {
-    position: relative;
-    height: 168px;
-    margin-top: 34px;
-  }
-  .stroke {
-    position: absolute;
-    right: -44px;
-    bottom: 0;
-    width: 200px;
-    pointer-events: none;
-    user-select: none;
-    transform: scaleX(-1) rotate(-8deg);
-  }
-
   /* --- Header ------------------------------------------------------ */
 
   .mark {
@@ -173,8 +153,6 @@
 
   @media (max-width: 400px) {
     h1 { font-size: 38px; }
-    .stroke { width: 168px; right: -38px; }
-    .stroke-space { height: 148px; }
   }
 </style>
 </head>
@@ -245,10 +223,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
       </a>
     </section>
-
-    <div class="stroke-space" aria-hidden="true">
-      <img class="stroke" src="assets/tail-stroke.png" alt="">
-    </div>
 
     <img class="sign-off" src="assets/three-monkeys.png" alt="" aria-hidden="true">
   </main>

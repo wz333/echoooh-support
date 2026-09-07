@@ -46,23 +46,6 @@
     overflow-x: clip;
   }
 
-  /* The brush stroke again, off the trailing edge — this page is reached
-     from More → Support, the one branch that mirrors it that way. */
-  .stroke-space {
-    position: relative;
-    height: 168px;
-    margin-top: 34px;
-  }
-  .stroke {
-    position: absolute;
-    right: -44px;
-    bottom: 0;
-    width: 200px;
-    pointer-events: none;
-    user-select: none;
-    transform: scaleX(-1) rotate(-8deg);
-  }
-
   /* Back row, matching EchoBackHeader's chevron-plus-title. */
   .back {
     display: inline-flex;
@@ -161,8 +144,6 @@
 
   @media (max-width: 400px) {
     h1 { font-size: 34px; }
-    .stroke { width: 168px; right: -38px; }
-    .stroke-space { height: 148px; }
   }
 </style>
 </head>
@@ -268,10 +249,6 @@
       <p>Questions about this policy, or about your data:</p>
       <a class="button" href="mailto:echoooh.support@gmail.com">echoooh.support@gmail.com</a>
     </section>
-
-    <div class="stroke-space" aria-hidden="true">
-      <img class="stroke" src="assets/tail-stroke.png" alt="">
-    </div>
 
     <img class="sign-off" src="assets/three-monkeys.png" alt="" aria-hidden="true">
   </main>
