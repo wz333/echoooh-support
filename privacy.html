@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Echo-Ooh — Privacy Policy</title>
+<meta name="description" content="What Echo-Ooh collects, what stays on your phone, and how to remove it.">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<style>
+  /* Same Echo-Ooh system as index.html — one accent colour, cream fill
+     for touchable things, no borders, no shadows, no cards. Light-only,
+     matching the app's own .preferredColorScheme(.light). */
+  :root {
+    color-scheme: light;
+
+    --ground: #FFFDFA;
+    --cream: #F5EADD;
+    --ink: #14110F;
+    --ink-secondary: #6F6A62;
+    --ink-tertiary: #9A9188;
+    --brand: #EE4B26;
+
+    --artwork-radius: 12px;
+    --margin: 20px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--ground);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 28px var(--margin) 0;
+    overflow-x: clip;
+  }
+
+  /* The brush stroke again, off the trailing edge — this page is reached
+     from More → Support, the one branch that mirrors it that way. */
+  .stroke-space {
+    position: relative;
+    height: 168px;
+    margin-top: 34px;
+  }
+  .stroke {
+    position: absolute;
+    right: -44px;
+    bottom: 0;
+    width: 200px;
+    pointer-events: none;
+    user-select: none;
+    transform: scaleX(-1) rotate(-8deg);
+  }
+
+  /* Back row, matching EchoBackHeader's chevron-plus-title. */
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 44px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--brand);
+    text-decoration: none;
+    transition: transform 0.16s ease-out, opacity 0.16s ease-out;
+  }
+  .back:active { transform: scale(0.98); opacity: 0.65; }
+  .back svg { width: 17px; height: 17px; }
+
+  h1 {
+    margin-top: 18px;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -0.036em;
+    line-height: 1.05;
+  }
+
+  .date {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--ink-secondary);
+  }
+
+  .lede {
+    margin-top: 18px;
+    color: var(--ink-secondary);
+    max-width: 46ch;
+  }
+
+  section { margin-top: 40px; }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: -0.036em;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 4px;
+  }
+
+  p { color: var(--ink-secondary); }
+  p + p { margin-top: 12px; }
+
+  ul {
+    margin: 10px 0 0 22px;
+    color: var(--ink-secondary);
+  }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--brand); }
+
+  strong { font-weight: 600; color: var(--ink); }
+
+  a { color: var(--brand); font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 18px;
+    background: var(--brand);
+    color: #FFFFFF;
+    transition: transform 0.16s ease-out, opacity 0.16s ease-out;
+  }
+  .button:hover { text-decoration: none; }
+  .button:active { transform: scale(0.98); opacity: 0.65; }
+
+  .sign-off {
+    margin: 64px 0 0;
+    width: calc(100% + 72px);
+    margin-left: -36px;
+    display: block;
+  }
+
+  footer {
+    padding: 22px var(--margin) 40px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--ink-secondary);
+  }
+
+  @media (max-width: 400px) {
+    h1 { font-size: 34px; }
+    .stroke { width: 168px; right: -38px; }
+    .stroke-space { height: 148px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      Support
+    </a>
+
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: September 6, 2026</p>
+    <p class="lede">Echo-Ooh is a shadowing app: it plays a sentence of real podcast speech and gives you a pause to say it back. This policy describes what the app collects, what never leaves your phone, and how to remove your data.</p>
+
+    <section>
+      <h2>The short version</h2>
+      <ul>
+        <li>You can listen without an account. Signing in is what makes your library and Notebook durable, and what carries a subscription.</li>
+        <li>Your voice recordings never leave your phone.</li>
+        <li>There are no analytics, advertising, or tracking services in the app.</li>
+        <li>You can delete your account, and everything it holds, from inside the app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What we collect</h2>
+
+      <h3>If you sign in</h3>
+      <p>Echo-Ooh uses <strong>Sign in with Apple</strong> and no other sign-in method. There is no password to create, and we never see one. When you sign in, we store:</p>
+      <ul>
+        <li>The anonymous user identifier Apple issues for you.</li>
+        <li>Your email address, if you chose to share it. If you chose to hide it, what we store is Apple’s private relay address, not your real one.</li>
+        <li>A token from Apple, when Apple supplies one, used solely so that deleting your account also severs the app’s link to your Apple ID.</li>
+        <li>Sign-in tokens for each device you use, so a session can be refreshed and revoked. These are stored hashed.</li>
+      </ul>
+
+      <h3>What syncs to your account</h3>
+      <p>Signing in syncs two things, and only these two:</p>
+      <ul>
+        <li><strong>Your library</strong> — which shows you have added.</li>
+        <li><strong>Your Notebook</strong> — the sentences and words you saved, including the sentence text, which episode and position it came from, and when you saved it.</li>
+      </ul>
+      <p>We also record which episodes you asked to prepare for shadowing, because that is what grants your account access to those transcripts.</p>
+
+      <h3>If you subscribe</h3>
+      <p>Purchases go through Apple’s App Store. <strong>We never see your payment details.</strong> Apple sends us a signed receipt, from which we store the transaction identifier, the subscription’s status, and when it expires — enough to know whether your subscription is active.</p>
+
+      <h3>If you write to us</h3>
+      <p>The in-app <strong>Contact us</strong> form and the sentence <strong>Report an issue</strong> action send your message to our support mailbox by email. If you supply a reply address, it is used to reply to you. These messages are not stored in any database, only in the mailbox itself.</p>
+    </section>
+
+    <section>
+      <h2>What stays on your phone</h2>
+      <p>Echo-Ooh is offline-capable by design: your state is written and read on the device first. The following never reach our servers at all.</p>
+      <ul>
+        <li><strong>Voice recordings.</strong> When you record yourself shadowing a sentence, the recording is a temporary file on your phone. It is deleted when you leave the sentence, or — for a daily challenge card — when the next day’s set replaces it. It is never uploaded, never analysed, and never used to train anything.</li>
+        <li><strong>Listening history and playback positions,</strong> including which episodes you recently listened to and where you stopped.</li>
+        <li><strong>Downloaded audio and transcripts.</strong></li>
+        <li><strong>Your settings,</strong> including app language, playback speed, and pause length.</li>
+      </ul>
+      <p>Deleting the app removes all of it.</p>
+    </section>
+
+    <section>
+      <h2>What we do not collect</h2>
+      <ul>
+        <li>No analytics, telemetry, or usage tracking.</li>
+        <li>No advertising, and no advertising identifiers.</li>
+        <li>No third-party tracking SDKs of any kind.</li>
+        <li>No location, contacts, photos, or health data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third parties</h2>
+      <p>Echo-Ooh relies on a small number of outside services to work at all:</p>
+      <ul>
+        <li><strong>Apple</strong> — for Sign in with Apple, and for App Store billing and subscription status.</li>
+        <li><strong>Podcast Index</strong> — searching for a show sends your search terms, through our server, to the Podcast Index directory. Nothing identifying you is sent with them.</li>
+        <li><strong>Podcast publishers.</strong> Episode audio and artwork are fetched from the publisher’s own servers, exactly as any podcast player would fetch them, so those servers see the ordinary information any web request carries, such as your IP address. Echo-Ooh does not tell them who you are.</li>
+      </ul>
+      <p>Our own servers keep standard operational logs — request times, addresses, and error information — used to run and secure the service, not to profile anyone.</p>
+    </section>
+
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>Account data is kept while your account exists. In the app, <strong>More → Account → Delete account</strong> deletes it: your Notebook and library are removed from your account, every signed-in device is signed out, and the app’s link to your Apple ID is revoked. This cannot be undone. Downloads already on your phone stay there until you delete them or delete the app.</p>
+      <p>If you would rather we did it for you, write to the address below from the email address on your account.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>Echo-Ooh is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has given us information, write to us and we will remove it.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the revised version is posted on this page with a new effective date.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy, or about your data:</p>
+      <a class="button" href="mailto:echoooh.support@gmail.com">echoooh.support@gmail.com</a>
+    </section>
+
+    <div class="stroke-space" aria-hidden="true">
+      <img class="stroke" src="assets/tail-stroke.png" alt="">
+    </div>
+
+    <img class="sign-off" src="assets/three-monkeys.png" alt="" aria-hidden="true">
+  </main>
+
+  <footer>© 2026 Echo-Ooh</footer>
+</body>
+</html>
